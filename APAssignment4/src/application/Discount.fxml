@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DiscountController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="577.0" prefWidth="719.0">
+         <children>
+            <Label layoutX="310.0" layoutY="22.0" prefHeight="35.0" prefWidth="101.0" text="Discount" textFill="#9c172b">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="83.0" prefHeight="35.0" prefWidth="156.0" text="Original Price" textFill="#1a179c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" layoutX="276.0" layoutY="83.0" promptText="Enter Original Price" />
+            <Label layoutX="31.0" layoutY="150.0" prefHeight="35.0" prefWidth="156.0" text="Discount (%off)" textFill="#179c5c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t2" layoutX="276.0" layoutY="152.0" promptText="Enter Discount in %" />
+            <Label layoutX="31.0" layoutY="218.0" prefHeight="35.0" prefWidth="156.0" text="Final Price" textFill="#6a179c">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t3" layoutX="276.0" layoutY="220.0" />
+            <Text fx:id="t4" layoutX="254.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="502.0" layoutY="220.0" mnemonicParsing="false" onAction="#OriginalPriceInput" text="Calculate Price" />
+            <Button layoutX="15.0" layoutY="442.0" mnemonicParsing="false" onAction="#BackToMenu" text="Back to Main Menu" textFill="#bc1229" />
+            <ImageView fitHeight="72.0" fitWidth="68.0" layoutX="493.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/dis.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="790.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AreaController">
+   <children>
+      <AnchorPane layoutX="-15.0" layoutY="100.0" prefHeight="728.0" prefWidth="715.0">
+         <children>
+            <Label layoutX="39.0" layoutY="26.0" text="Length">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#153910" />
+                        <Stop color="#0c4d04" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="t1" layoutX="26.0" layoutY="69.0" promptText="Enter length" />
+            <Label layoutX="39.0" layoutY="133.0" text="width">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#153910" />
+                        <Stop color="#0a6ce4" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="t2" layoutX="26.0" layoutY="179.0" promptText="Enter wdth" />
+            <Button layoutX="314.0" layoutY="256.0" mnemonicParsing="false" onAction="#AreaAction" text="Calculate" />
+            <Text fx:id="t" fill="#3a27c9" layoutX="314.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Label layoutX="96.0" layoutY="100.0" text="meters" />
+            <Label layoutX="96.0" layoutY="210.0" text="meters" />
+            <ImageView fitHeight="102.0" fitWidth="130.0" layoutX="337.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/area.PNG" />
+               </image>
+            </ImageView>
+            <Button layoutX="37.0" layoutY="351.0" mnemonicParsing="false" onAction="#Back" text="Back to Main Menu" textFill="#1ea420" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="325.0" layoutY="24.0" text="Area " textFill="#4512a4">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

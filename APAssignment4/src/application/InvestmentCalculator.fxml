@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InvestmentController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="-25.0" prefHeight="684.0" prefWidth="920.0">
+         <children>
+            <Label layoutX="312.0" layoutY="36.0" text="Investment Calculator" textFill="#1a6db2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="63.0" layoutY="197.0" text="Total Investment" textFill="#eb0e0e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t1" layoutX="63.0" layoutY="238.0" promptText="Enter amount" />
+            <Label layoutX="63.0" layoutY="288.0" text="Interest (Percentage)" textFill="#0eeb20">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t2" layoutX="63.0" layoutY="327.0" promptText="Enter annual rate" />
+            <Label layoutX="70.0" layoutY="383.0" text="Duration in Years" textFill="#0e7ceb">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t3" layoutX="63.0" layoutY="419.0" promptText="Enter Duration" />
+            <Button layoutX="366.0" layoutY="457.0" mnemonicParsing="false" onAction="#InvestmentEvent" prefHeight="53.0" prefWidth="122.0" text="Calculate" />
+            <Text fx:id="t4" fill="#e01919" layoutX="382.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="382.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/inv.PNG" />
+               </image>
+            </ImageView>
+            <Button layoutX="31.0" layoutY="555.0" mnemonicParsing="false" onAction="#BackToMenu" text="Back to Main Menu" textFill="#6124c9" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
